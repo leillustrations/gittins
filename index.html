@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gittins Values Heatmap</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    #heatmap {
+      width: 600px;
+      height: 600px;
+      margin-bottom: 20px;
+    }
+    .axis-label {
+      font-size: 14px;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gittins Values Heatmap</h1>
+  <div id="slider-container">
+    <label for="discount-factor">Discount Factor:</label>
+    <input type="range" id="discount-factor" min="0" max="1" step="0.1" value="0.5">
+  </div>
+  <div id="heatmap"></div>
+
+  <script src="calculate.js"></script>
+  <script src="heatmap.js"></script>
+</body>
+</html>
